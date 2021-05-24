@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "target": "es6",
+        "lib": [
+            "esnext"
+        ],
+        "allowJs": true,
+        "declaration": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": false,
+        "noEmit": true,
+        "downlevelIteration": true,
+        "noFallthroughCasesInSwitch": false,
+        "typeRoots": [
+            "./types",
+            "./node_modules/@types"
+        ]
+    }
+}
