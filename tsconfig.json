@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "baseUrl": "src",
+        "outDir": "dist",
         "target": "es6",
         "lib": [
             "esnext"
@@ -16,12 +16,19 @@
         "moduleResolution": "node",
         "resolveJsonModule": true,
         "isolatedModules": false,
-        "noEmit": true,
         "downlevelIteration": true,
         "noFallthroughCasesInSwitch": false,
         "typeRoots": [
             "./types",
             "./node_modules/@types"
-        ]
-    }
+        ],
+    },
+    "include": [
+        "src/**/index.ts"
+    ],
+    "exclude": [
+        "src/**/*.test.ts",
+        "node_modules",
+        "**/*.spec.ts"
+    ]
 }
